@@ -1,168 +1,149 @@
-/* General Styles */
-
-body {
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+.kidzworld{
+    display: flex;
+    justify-content: flex-start;
 }
-
-/* Header Styles */
-
-.header {
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header{
     background-image: url("https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/kw-background.png?raw=true");
-    background-size: cover;
+    background-size: 100%;
     color: white;
     height: 500px;
     background-repeat: no-repeat;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 70px;
 }
-
-.font {
-    font-size: 40px;
+.font{
+    font-size: 80px;
+    font-weight: 400;
 }
-
-.new {
-    font-size: 15px;
+.new{
+    font-size: 25px;
 }
-
-/* Navigation Styles */
-
-.nav {
+.cart{
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content:end;
+    align-items: end;
 }
-
-.kidzworld {
+.books, .games, .handmade{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    margin-top: 60px;
 }
-
-.cart {
+.images{
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
-
-.cart img {
-    margin-right: 5px;
-}
-
-/* Body Styles */
-
-.body {
-    padding: 20px;
-}
-
-/* Section Styles */
-
-.books, .games, .handmade {
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-.images {
+.book, .game, .image{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.book, .game, .image {
-    flex: 0 0 calc(33.333% - 40px);
+    flex-direction: column;
     margin: 20px;
     padding: 10px;
-    text-align: center;
 }
-
-.price {
+.price{
     display: flex;
     justify-content: space-between;
 }
-
-.btn {
-    background-color: rgb(74, 148, 231);
+.btn{
+    background-color:  #6095ff;
     color: white;
     border-color: white;
     border-radius: 5px;
     padding: 7px;
 }
+.kri{
+    border-radius: 100%;
 
-/* Footer Styles */
-
-footer {
+}
+footer{
     display: flex;
     background-color: black;
     color: white;
     justify-content: space-between;
     padding: 15px;
-    margin-top: 20px;
 }
-
-.right {
+.right{
     position: relative;
-    top: 20px;
+    top: 50px;
     margin-bottom: 10px;
 }
-
-.left,
-.right {
-    margin: 10px;
+.right, .left{
+    margin: 30px;
 }
-
-.kri {
-    border-radius: 50%;
+.books{
+    margin-top: 40px;
 }
-
-.krishti {
+.games, .handmade{
+    margin-top: 110px;
+}
+footer{
+    margin-top: 140px;
+}
+.krishti{
     text-align: end;
     padding: 10px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.krishti1 {
+.krishti1{
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.left {
+.left{
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: x-large;
 }
-
-.left1 {
+.left1{
     padding: 5px;
 }
-
-/* Additional Styles */
-
-.name {
-    font-size: 16px;
+.name{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
-
-.info {
+.info{
     color: gray;
-    font-size: 16px;
+    font-size: 20px;
 }
-
-.price1 {
-    font-size: 18px;
+.price1{
+    font-size: x-large;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-/* Media Queries for Responsiveness */
-
-@media screen and (max-width: 768px) {
-    .images {
+@media screen and (max-width: 600px){
+    .header{
+        display: flex;
+        font-size: 15px;
+        height: 200px;
+        text-align: left;
         flex-direction: column;
-        align-items: center;
+        padding: 5%;
+    }
+    .font{
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+    .new{
+        font-size: 5px;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .book {
+        align-self: center;
     }
 
-    .book,
-    .game,
-    .image {
-        flex: 0 0 calc(100% - 20px);
-    }
 }
